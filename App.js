@@ -4,13 +4,20 @@ import HomeScreen from "./src/screens/HomeScreen";
 import ComponentsScreen from "./src/screens/ComponentsScreen";
 import ListScreen from "./src/screens/ListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
+import CounterApp from "./src/screens/CounterApp";
+import ColorBlocks from "./src/screens/ColorBlocks";
+import SquareScreen from "./src/screens/SquareScreen";
 
-const navigator = createStackNavigator( // passes 'props' object to each screen
+const navigator = createStackNavigator(
+  // passes 'props' object to each screen
   {
     Home: HomeScreen,
     Components: ComponentsScreen,
     List: ListScreen,
     Images: ImageScreen,
+    Counter: CounterApp,
+    Color: ColorBlocks,
+    ColorAdj: SquareScreen,
   },
   {
     initialRouteName: "Home",
