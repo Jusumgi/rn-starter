@@ -7,6 +7,7 @@ import ImageScreen from "./src/screens/ImageScreen";
 import CounterApp from "./src/screens/CounterApp";
 import ColorBlocks from "./src/screens/ColorBlocks";
 import SquareScreen from "./src/screens/SquareScreen";
+import TextScreen from "./src/screens/TextScreen";
 
 const navigator = createStackNavigator(
   // passes 'props' object to each screen
@@ -18,6 +19,7 @@ const navigator = createStackNavigator(
     Counter: CounterApp,
     Color: ColorBlocks,
     ColorAdj: SquareScreen,
+    Name: TextScreen,
   },
   {
     initialRouteName: "Home",
