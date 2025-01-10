@@ -8,6 +8,7 @@ import CounterApp from "./src/screens/CounterApp";
 import ColorBlocks from "./src/screens/ColorBlocks";
 import SquareScreen from "./src/screens/SquareScreen";
 import TextScreen from "./src/screens/TextScreen";
+import BoxScreen from "./src/screens/BoxScreen";
 
 const navigator = createStackNavigator(
   // passes 'props' object to each screen
@@ -20,6 +21,7 @@ const navigator = createStackNavigator(
     Color: ColorBlocks,
     ColorAdj: SquareScreen,
     Name: TextScreen,
+    Box: BoxScreen,
   },
   {
     initialRouteName: "Home",
